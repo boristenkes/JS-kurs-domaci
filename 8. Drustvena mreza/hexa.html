@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hexa</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/bfaacd69a6.js" crossorigin="anonymous"></script>
+    <script src="js/Session.js" defer></script>
+    <script src="js/User.js" defer></script>
+    <script src="js/Comment.js" defer></script>
+    <script src="js/Post.js" defer></script>
+    <script src="js/hexa.js" defer></script>
+  </head>
+  <body>
+    
+    <div class="logo" id="hexa_logo">
+      <img src="img/logo.png"/>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="inner-container left-side">
+            <img src="img/profile.jpg" class="profile" />
+            <p><b id="username"></b></p>
+            <p id="email"></p>
+
+            <div>
+              <button id="editAccount">Izmeni nalog</button>
+              <button id="logout">Odjavi se</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="inner-container right-side">
+            <form id="postForm">
+              <textarea
+                id="postContent"
+                placeholder="Napisi objavu..."
+              ></textarea>
+              <button>Objavi</button>
+            </form>
+
+            <div id="allPostsWrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-modal">
+      <button id="closeModal">&times;</button>
+      <form id="editForm">
+        <h2>Izmeni svoj profil</h2>
+
+        <div>
+          <label for="korisnicko_ime">Korisnicko ime:</label>
+          <input
+            id="korisnicko_ime"
+            type="text"
+            name="korisnicko_ime"
+            placeholder="niko.nikoli1"
+          />
+        </div>
+
+        <div>
+          <label for="edit_email">Email adresa:</label>
+          <input
+            id="edit_email"
+            type="email"
+            name="register_email"
+            placeholder="niko.nikolic@gmail.com"
+          />
+        </div>
+
+        <div>
+          <button>Izmeni</button>
+        </div>
+      </form>
+
+      <hr />
+      <button id="deleteProfile">Obrisi nalog</button>
+    </div>
+  </body>
+</html>

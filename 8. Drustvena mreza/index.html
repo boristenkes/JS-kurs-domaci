@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hexa</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/Validator.js" defer></script>
+    <script src="js/Session.js" defer></script>
+    <script src="js/User.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="img/logo.png" />
+    </div>
+
+    <div class="main-wrapper">
+      <form id="loginForm">
+        <h2>Login</h2>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            autocomplete="off"
+            type="email"
+            name="email"
+            id="login_email"
+            placeholder="niko.nikolic@gmail.com"
+          />
+        </div>
+
+        <div>
+          <label for="lozinka">Lozinka:</label>
+          <input
+            autocomplete="off"
+            type="password"
+            name="lozinka"
+            id="login_lozinka"
+            placeholder="*******"
+          />
+        </div>
+
+        <div>
+          <button>Uloguj se</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="no-acc-register">
+      <p>Nemas nalog?</p>
+      <button id="registracija">Registruj se</button>
+    </div>
+
+    <div class="custom-modal">
+      <div id="closeModal">&times;</div>
+
+      <form id="registrationForm">
+        <h2>Registracija korisnika</h2>
+
+        <div>
+          <label for="korisnicko_ime">Korisničko ime: <span class="required-star">*</span></label>
+          <input
+            autocomplete="off"
+            id="korisnicko_ime"
+            type="text"
+            name="korisnicko_ime"
+            placeholder="niko.nikolic1"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email: <span class="required-star">*</span></label>
+          <input
+            autocomplete="off"
+            id="email"
+            type="email"
+            name="register_email"
+            placeholder="niko.nikolic@gmail.com"
+          />
+        </div>
+
+        <div>
+          <label for="lozinka">Lozinka: <span class="required-star">*</span></label>
+          <input
+            autocomplete="off"
+            id="lozinka"
+            type="password"
+            name="register_lozinka"
+            placeholder="*********"
+          />
+        </div>
+
+        <div>
+          <label for="ponovi_lozinku">Ponovi lozinku: <span class="required-star">*</span></label>
+          <input
+            autocomplete="off"
+            id="ponovi_lozinku"
+            type="password"
+            name="ponovi_lozinku"
+            placeholder="*********"
+          />
+        </div>
+
+        <div>
+          <button>Registruj se</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

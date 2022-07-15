@@ -1,0 +1,126 @@
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Trebuchet MS", "Roboto", sans-serif;
+}
+
+button {
+   cursor: pointer;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 100vh;
+   background: #111;
+}
+
+.container {
+   background: #333;
+   padding: 2rem;
+   border-radius: 1rem;
+   color: #fff;
+}
+
+.main-title {
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.main-wrapper {
+   width: fit-content;
+   max-width: 1030px;
+}
+
+ul {
+   background: rgb(167, 108, 0);
+   padding: 1rem;
+   border-radius: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.single-el {
+   list-style: none;
+   background: orange;
+   padding: 1rem;
+   margin: 1rem;
+   border-radius: .5rem;
+   width: 300px;
+   text-align: center;
+   cursor: default;
+   max-height: 70px;
+   overflow: auto;
+   display: grid;
+   place-items: center;
+}
+
+#dragListener {
+   cursor: move;
+}
+
+form {
+   display: grid;
+   place-items: center;
+   height: 100%;
+}
+
+form input {
+   width: 80%;
+   height: 80%;
+   border: none;
+   outline: none;
+   background: #eee;
+   border-radius: .5rem;
+   padding: .5rem;
+}
+
+.click-parent {
+   padding: 0;
+}
+
+#clickListener {
+   position: relative;
+   overflow: hidden;
+   height: 100%;
+   width: 100%;
+   display: grid;
+   place-items: center;
+   user-select: none;
+}
+
+.ripple-animation {
+   position: absolute;
+   animation: rippleClickAnimation 500ms linear infinite;
+   pointer-events: none;
+   background: #fff;
+   transform: translate(-50%, -50%);
+   border-radius: 50%;
+}
+
+@keyframes rippleClickAnimation {
+   from {
+      opacity: .3;
+      width: 0;
+      height: 0;
+   }
+   to {
+      opacity: 0;
+      width: 500px;
+      height: 500px;
+   }
+}
+
+input {
+   font-size: 1.2rem;
+}
+
+/* p {
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
+} */

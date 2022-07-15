@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OOP Form Validatoon</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Create Account</h1>
+      <div>
+        <label for="ime_prezime">Full name: <span>*</span></label>
+        <input
+          autocomplete="off"
+          id="ime_prezime"
+          type="text"
+          name="full_name"
+          placeholder="Niko Nikolic"
+        />
+      </div>
+      <div>
+        <label for="korisnicko_ime">Username: <span>*</span></label>
+        <input
+          autocomplete="off"
+          id="korisnicko_ime"
+          type="text"
+          name="username"
+          placeholder="niko.nikolic1"
+        />
+      </div>
+      <div>
+        <label for="email">Email address: <span>*</span></label>
+        <input
+          autocomplete="off"
+          id="email"
+          type="text"
+          name="email"
+          placeholder="niko.nikolic@mail.com"
+        />
+      </div>
+      <div>
+        <label for="broj_telefona">Phone Number: <span>*</span></label>
+        <input
+          autocomplete="off"
+          id="broj_telefona"
+          type="text"
+          name="phone_number"
+          placeholder="123 456 7890"
+        />
+      </div>
+      <div>
+        <label for="zip">Zip: <span>*</span></label>
+        <input
+          autocomplete="off"
+          id="zip"
+          type="text"
+          name="zip"
+          placeholder="12345"
+        />
+      </div>
+      <div>
+        <label for="lozinka">Password: <span>*</span></label>
+        <input
+          autocomplete="off"
+          id="lozinka"
+          type="text"
+          name="password"
+          placeholder="*******"
+        />
+      </div>
+      <div>
+        <label for="ponovi_lozinku">Repeat Password: <span>*</span></label>
+        <input
+          autocomplete="off"
+          id="ponovi_lozinku"
+          type="text"
+          name="repeat_password"
+          placeholder="*******"
+        />
+      </div>
+      <div class="buttons">
+        <button type="button">Cancel</button>
+        <button type="button">Register</button>
+      </div>
+    </form>
+
+    <script type="text/javascript" src="validator.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

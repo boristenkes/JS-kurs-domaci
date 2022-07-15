@@ -1,0 +1,38 @@
+html body {
+  background-color: #111d29;
+}
+
+div#SIvCob {
+  color: #fff;
+}
+
+#rcnt a {
+  color: #b1d237 !important;
+}
+
+.iUh30.tjvcx,
+.dyjrff.qzEoUe {
+  color: lightskyblue;
+}
+
+#hdtb-msb div > .hdtb-mitem a {
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#hdtb-msb div > .hdtb-mitem a:hover {
+  background: #b1d237;
+  color: #111d29;
+}
+
+.gb_oa.gb_Xd.gb_1a.gb_4.gb_Ac.gb_Mc {
+  background: #111d29 !important;
+}
+
+body.srp,
+body,
+.Ww4FFb,
+#slim_appbar,
+#pTwnEc,
+.sfbg {
+  background: #111d29 !important;
+}

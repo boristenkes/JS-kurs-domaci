@@ -1,0 +1,29 @@
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Roboto, sans-serif;
+}
+
+h1 {
+   margin: 1.5rem auto;
+   width: fit-content;
+}
+
+h1::after {
+   content: "";
+   background: red;
+   height: 5px;
+   width: 30%;
+   display: block;
+   margin: .25rem auto 2rem;
+   border-radius: 100px;
+}
+
+.chart-wrapper {
+   width: 70%;
+   margin: 3rem auto;
+}

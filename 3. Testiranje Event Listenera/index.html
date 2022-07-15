@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Testing Event Listeners</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+   <script src="https://kit.fontawesome.com/bfaacd69a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   <div class="container">
+      <h1 class="main-title">Testing Event Listeners</h1>
+      
+      <div class="main-wrapper">
+         <ul>
+            <li class="single-el click-parent">
+               <h1 id="clickListener">Click!</h1>
+            </li>
+            <li class="single-el">
+               <h1 id="dragListener" draggable="true">Drag!</h1click>
+            </li>
+            <li class="single-el">
+               <h1 id="mousemoveListener">Mouse move!</h1>
+            </li>
+            <li class="single-el input-parent">
+               <form><input id="inputListener" type="text" autocomplete="off" placeholder="Enter something!"></form>
+            </li>
+            <li class="single-el">
+               <form id="submitListener"><input type="text" autocomplete="off" placeholder="Enter and submit!"></form>
+            </li>
+            <li class="single-el" id="scrollListener">
+               <h2>Scroll!</h2>
+               <p>
+                  Lorem ipsum dolor sit amet 
+                  consectetur adipisicing elit. 
+                  Consequuntur nihil blanditiis 
+                  fugiat recusandae voluptas 
+                  ad dolore praesentium. Quisquam 
+                  in culpa illum amet esse ipsum? 
+                  Amet deserunt quisquam repellat 
+                  ipsum tempora?
+               </p>
+            </li>
+         </ul>
+      </div>
+   </div>
+   
+</body>
+</html>
